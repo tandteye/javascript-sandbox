@@ -1,5 +1,5 @@
 // String
-const firstName = 'Sara';
+const firstName = "Sara";
 
 // Number
 const age = 30;
@@ -16,7 +16,8 @@ const aptNumber = null;
 const score = undefined;
 
 // Symbol
-const id = Symbol('id');
+const id = Symbol("id");
+console.log(id);
 
 // BigInt
 const n = 9007199254740991n;
@@ -26,11 +27,11 @@ const n = 9007199254740991n;
 const numbers = [1, 2, 3, 4];
 
 const person = {
-  name: 'Brad',
+  name: "Brad",
 };
 
 function sayHello() {
-  console.log('Hello');
+  console.log("Hello");
 }
 
 const output = sayHello;
