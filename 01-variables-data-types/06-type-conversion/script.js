@@ -1,4 +1,4 @@
-let amount = 'hello';
+let amount = "hello_base";
 
 // Convert string to number
 amount = parseInt(amount);
@@ -19,6 +19,11 @@ amount = Boolean(amount);
 console.log(Math.sqrt(-1));
 console.log(1 + NaN);
 console.log(undefined + undefined);
-console.log('foo' / 3);
+console.log("foo" / 3);
 
-console.log(amount, typeof amount);
+let amount_new = "hello";
+
+amount_new = +amount_new;
+amount_new = amount_new + 3;
+
+console.log(amount_new, typeof amount_new);
