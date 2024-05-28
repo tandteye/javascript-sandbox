@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index of Subfolders</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        margin: 5px 0;
+      }
+      a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Index of Subfolders</h1>
+    <ul id="subfolderList"></ul>
+
+    <script src="subfolders.js"></script>
+    <script>
+      // Function to create list items for each subfolder
+      function createSubfolderList() {
+        const list = document.getElementById("subfolderList");
+        subfolders.forEach((subfolder) => {
+          const listItem = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = subfolder + "/";
+          link.textContent =
+            subfolder.charAt(0).toUpperCase() + subfolder.slice(1);
+          listItem.appendChild(link);
+          list.appendChild(listItem);
+        });
+      }
+
+      // Call the function to create the list
+      createSubfolderList();
+    </script>
+  </body>
+</html>
