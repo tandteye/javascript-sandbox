@@ -2,6 +2,11 @@
 
 const arr = [1, 2, 3, 4, 5];
 
+arr.push(6);
+arr.unshift(0);
+arr.reverse();
+console.log(arr);
+
 // arr.reverse();
 // arr.push(0);
 // arr.unshift(6);

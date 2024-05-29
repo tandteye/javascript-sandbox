@@ -1,7 +1,7 @@
 let x;
 
-const fruits = ['apple', 'pear', 'orange'];
-const berries = ['strawberry', 'blueberry', 'rasberry'];
+const fruits = ["apple", "pear", "orange"];
+const berries = ["strawberry", "blueberry", "rasberry"];
 
 // Nesting arrays
 
@@ -23,7 +23,8 @@ x = fruits.concat(berries);
 x = [...fruits, ...berries];
 
 // flat() - Flatten an array
-const arr = [1, 2, [3, 4, 5], 6, [7, 8]];
+const arr = [1, 2, ...[3, 4, 5], 6, ...[7, 8]];
+console.log(arr);
 x = arr.flat();
 
 // Static methods of Array object
@@ -32,7 +33,10 @@ x = arr.flat();
 x = Array.isArray(fruits);
 
 // from() - Create an array from an array like value
-x = Array.from('12345');
+x = Array.from("12345");
+x = Array.from("this is my name");
+
+console.log(x);
 
 // of() - Create an array from a set of values
 const a = 1;
