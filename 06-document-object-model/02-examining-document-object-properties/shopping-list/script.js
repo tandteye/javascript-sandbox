@@ -31,7 +31,7 @@ output = document.forms[0].method;
 output = document.forms[0].action;
 
 // Change a form id
-document.forms[0].id = 'new-id';
+document.forms[0].id = "new-id";
 
 // Get all links
 // output = document.links;
@@ -46,9 +46,9 @@ document.forms[0].id = 'new-id';
 output = document.images;
 output = document.images[0];
 output = document.images[0].src;
+console.log(output);
 
 // Turn an HTMLCollection into an array
-const forms = Array.from(document.forms);
-forms.forEach((form) => console.log(form));
 
-console.log(output);
+// const forms = Array.from(document.forms);
+// forms.forEach((form) => console.log(form));

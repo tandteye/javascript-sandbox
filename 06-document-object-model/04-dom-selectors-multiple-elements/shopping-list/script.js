@@ -1,24 +1,25 @@
 // querySelectorAll()
 // Returns a NodeList
 
-const listItems = document.querySelectorAll('.item');
+const listItems = document.querySelectorAll(".item");
 
+console.log(listItems);
 // Access elements by index
 console.log(listItems[1].innerText);
 
 // Setting a color for specific element
-listItems[1].style.color = 'red';
+listItems[1].style.color = "red";
 
 // We can use forEach() on a NodeList
 listItems.forEach((item, index) => {
-  item.style.color = 'red';
+  item.style.color = "blue";
 
-  if (index === 1) {
+  if (index === 7) {
     item.remove();
   }
 
   if (index === 0) {
-    item.innerHTML = ` Oranges
+    item.innerHTML = ` Grapefruit
     <button class="remove-item btn-link text-red">
       <i class="fa-solid fa-xmark"></i>
     </button>`;
@@ -28,7 +29,7 @@ listItems.forEach((item, index) => {
 // getElementsByClassName()
 // Returns an HTMLCollection
 
-const listItems2 = document.getElementsByClassName('item');
+const listItems2 = document.getElementsByClassName("item");
 
 console.log(listItems2[2].innerText);
 
@@ -40,5 +41,5 @@ listItemsArray.forEach((item) => {
 
 // getElementsByTagName()
 
-const listItems3 = document.getElementsByTagName('li');
+const listItems3 = document.getElementsByTagName("li");
 console.log(listItems3[0].innerText);
